@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+.wrangler/
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+~*

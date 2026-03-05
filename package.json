@@ -1,0 +1,25 @@
+{
+  "name": "status-page",
+  "version": "1.0.0",
+  "description": "Modern status monitoring dashboard for Thrallboy infrastructure",
+  "type": "module",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy",
+    "db:create": "wrangler d1 create status-logs",
+    "db:schema": "wrangler d1 execute status-logs --file schema/schema.sql"
+  },
+  "keywords": [
+    "status",
+    "monitoring",
+    "cloudflare",
+    "d1"
+  ],
+  "author": "DevOps",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.28.0"
+  },
+  "dependencies": {}
+}

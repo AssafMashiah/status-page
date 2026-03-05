@@ -1,12 +1,6 @@
 name = "status-page"
-pages_build_output_dir = "."
+main = "functions/index.js"
 compatibility_date = "2024-03-05"
-
-[env.production]
-vars = { ENVIRONMENT = "production" }
-
-[env.preview]
-vars = { ENVIRONMENT = "preview" }
 
 [[d1_databases]]
 binding = "DB"
